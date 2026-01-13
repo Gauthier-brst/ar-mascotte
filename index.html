@@ -20,10 +20,15 @@
     >
 
       <!-- MARQUEUR PERSONNALISÉ -->
-        <a-marker preset="hiro">
-            <a-box position="0 0.5 0" material="color: red;"></a-box>
+      <a-marker
+        type="pattern"
+        url="pattern.patt"
+        smooth="true"
+        smoothCount="10"
+        smoothTolerance="0.01"
+        smoothThreshold="5"
+      >
 
-        
         <!-- MODÈLE 3D -->
         <a-entity
           gltf-model="mascotte.glb"
